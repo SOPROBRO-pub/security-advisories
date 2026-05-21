@@ -42,19 +42,8 @@ security-advisories/
 │   ├── 2024/              # One markdown file per CVE
 │   └── 2025/
 ├── featured/              # Hand-picked high-impact disclosures
-├── data/
-│   └── all-advisories.json  # Machine-readable dataset (raw API response)
-└── scripts/
-    └── generate.py        # Regenerates markdown files from data/
-```
-
-## Refreshing the dataset
-
-The dataset is pulled from the public Patchstack researcher profile via their internal API endpoint at `vdp-api.patchstack.com`. To refresh:
-
-```bash
-python3 scripts/refresh.py     # downloads latest pages to data/
-python3 scripts/generate.py    # regenerates markdown from data/
+└── data/
+    └── all-advisories.json  # Machine-readable dataset
 ```
 
 ## Coordinated disclosure
